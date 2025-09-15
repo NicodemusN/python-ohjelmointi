@@ -1,6 +1,9 @@
 # python-ohjelmointi
-Koulutehtävät + saattaa olla erillisissä kansioissa muitakin ku python.  
-Pyyttonin kallo pyörii:  
+Koulun python-ohjelmointitehtävät löytyvät alahakemistoista assignment01, assignment02 ja niin edelleen. Muut kansiot ovat tämän repon "tarviketiedostoja" tai ylimääräistä koodisähläystä varten.  
+
+En ota vastuuta koodeista!  
+
+Pyyttoni:  
 ![pyyttoni](/assets/fixed-python-loop.gif)
 
 ![pepe-koodaa](/assets/pepe-koodaa.jpg)
