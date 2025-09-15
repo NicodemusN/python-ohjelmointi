@@ -1,0 +1,5 @@
+C++ tiedoston kasaus Linuxilla tässä repossa:
+    g++ helloworld.cpp -o ~/python-ohjelmointi/cplusplus/build/helloworld.out
+
+Kasatun binäärin käynnistäminen:
+    ./build/helloworld.out
