@@ -1,5 +1,5 @@
 # python-ohjelmointi
-Koulun python-ohjelmointitehtävät löytyvät alahakemistoista assignment01, assignment02 ja niin edelleen. Muut kansiot ovat tämän repon "tarviketiedostoja" tai ylimääräistä koodisähläystä varten.  
+Koulun python-ohjelmointitehtävät löytyvät alahakemistoista assignment01, assignment02 ja niin edelleen. Muut hakemistot ovat tämän repon "tarviketiedostoja" tai ylimääräistä koodisähläystä varten.  
 
 En ota vastuuta koodeista!  
 
