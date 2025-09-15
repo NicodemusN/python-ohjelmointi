@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     string nameList[3] = {"Alice", "Bob", "Charlie"};
     string myInput;
-    //int n = 0;
+
     int s = sizeof(nameList);
 
     cout << "Anna nimi. ";
