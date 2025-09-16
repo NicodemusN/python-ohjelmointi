@@ -1,7 +1,7 @@
 # python-ohjelmointi
-Koulun python-ohjelmointitehtävät löytyvät alahakemistoista assignment01, assignment02 ja niin edelleen. Muut hakemistot ovat tämän repon "tarviketiedostoja" tai ylimääräistä koodisähläystä varten.  
+Omia ratkaisuja koulun python tehtäviin. Tehtävät löytyvät alahakemistoista assignment01, assignment02 ja niin edelleen. Muut hakemistot ovat tämän repon "tarviketiedostoja" tai ylimääräistä koodisähläystä varten.  
 
-Hakemistosta "cplusplus" löytyy myös koulun python-tehtäviä c++ ohjelmointikielelle mukautettuna.
+Hakemistosta "cplusplus" saattaa löytyä myös koulun python-tehtäviä c++ ohjelmointikielelle mukautettuna. Ne on nimetty tällöin muodossa A1e01, A1e02, A2e03 jne. alkuperäisiä python-tehtäviä vastaten.  
 
 En ota vastuuta koodeista!  
 
