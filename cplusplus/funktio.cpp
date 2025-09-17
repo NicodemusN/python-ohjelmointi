@@ -2,6 +2,7 @@
 using namespace std;
 
 int a, b;
+float avr;
 
 void average() {
     cout << "Annappa luku 1: \n";
@@ -16,6 +17,7 @@ void average() {
 
 int main() {
     average();
-
+    cout << "Muuttujan avr tavukoko:\n";
+    cout << sizeof(avr) << "\n";
     return 0;
 }
