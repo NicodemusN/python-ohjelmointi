@@ -25,4 +25,4 @@ int main() {
 // lopputuloksena muuttujien myNum ja myString arvot itsessään
 // luokassa myClass eivät muutu (pysyvät nollassa), mutta
 // main-funktiossa voidaan hyödyntää niitä arvojen syöttämiseen
-// muita tarkoituksia varten.
+// muita tarkoituksia varten.ois pitäny mennä tietotek
