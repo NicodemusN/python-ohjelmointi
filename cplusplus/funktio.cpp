@@ -2,7 +2,7 @@
 using namespace std;
 
 int a, b;
-float avr;
+double avr, sum;
 
 void average() {
     cout << "Annappa luku 1: \n";
@@ -10,8 +10,8 @@ void average() {
     cout << "Annappa luku 2: \n";
     cin >> b;
 
-    int sum = a + b;
-    float avr = sum / 2;
+    sum = a + b;
+    avr = sum / 2;
     cout << "Lukujesi keskiarvo on: " << avr << "\n";
 }
 
