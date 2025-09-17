@@ -15,7 +15,7 @@ for i in lst:
     # jo olemassa dictionaryssa
 
     dct.setdefault(i, 0) # listan ensimmäinen jäsen saa arvon 0
-    dct[i] += 1 # arvoa lisätään yhdellä, jos jäsen tulee uudelleen
+    dct[i] += 1 # arvoa lisätään yhdellä. jos jäsen tulee uudelleen
                 # vastaan toisella loopin kierroksella, arvo kasvaa
                 # jälleen yhdellä.
                 # näin saadaan laskettua jokaisen syötetyn sanan määrä
