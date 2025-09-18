@@ -27,33 +27,11 @@ for i in range(len(k2)):
     k2[i] = float(k2[i])
     k2[i] = math.radians(k2[i])
 
-# debug
-print(k1)
-print(k2)
+k1[1] = k1[1] + math.pi
+k2[1] = k2[1] + math.pi
 
 #dif_lat = k1[0] - k2[0]
 dif_lon = k1[1] - k2[1]
 
 d = r_earth * math.acos(math.cos(k1[0]) * math.cos(k2[0]) * math.cos(dif_lon) + math.sin(k1[0]) * math.sin(k2[0]))
-print(d)
-
-#
-#
-#
-#
-#
-#
-# paskaroskis:
-#
-#def haversine(val):
-#    val = (1 - math.cos(val)) / 2
-#    
-#hav_dif_lat = haversine(dif_lat)
-#hav_dif_lon = haversine(dif_lon)
-
-#debug
-#print(dif_lat)
-#print(dif_lon)
-
-# laskuosuus
-# d = r cos-1[cos a cos b cos(x-y) + sin a sin b]
+print("Antamiesi koordinaattien välinen etäisyys on noin " + str(d) + "km.")
