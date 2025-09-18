@@ -18,7 +18,7 @@ k2 = input2.split(",")
 r_earth = 6371
 theta = 0
 
-# koordinaattien erottelu desimaaliluvuiksi
+# koordinaattien erottelu desimaaliluvuiksi ja muuntaminen radiaaneiksi
 for i in range(len(k1)):
     k1[i] = float(k1[i])
     k1[i] = math.radians(k1[i])
