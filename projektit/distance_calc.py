@@ -1,6 +1,6 @@
 
 # Laskin kahden maapallon pisteen väliselle suorimmalle matkalle maan pintaa pitkin
-# Ohjelmaan syötetään pisteiden koordinaatit asteiden tarkkuudella
+# Ohjelmaan syötetään pisteiden koordinaatit asteiden desimaalien tarkkuudella
 
 import math
 
@@ -43,5 +43,5 @@ dif_lon = k1[1] - k2[1]
 #hav_dif_lat = haversine(dif_lat)
 #hav_dif_lon = haversine(dif_lon)
 
-d = r_earth * math.acos(math.acos(k1[0]) * math.acos(k2[0])* math.acos(dif_lon) + math.sin(k1[0]) * math.sin(k2[0]))
+d = r_earth * math.acos(math.acos(k1[0]) * math.acos(k2[0]) * math.acos(dif_lon) + math.sin(k1[0]) * math.sin(k2[0]))
 print(d)
