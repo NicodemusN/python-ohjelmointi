@@ -34,4 +34,4 @@ k2[1] = k2[1] + math.pi
 dif_lon = k1[1] - k2[1]
 
 d = r_earth * math.acos(math.cos(k1[0]) * math.cos(k2[0]) * math.cos(dif_lon) + math.sin(k1[0]) * math.sin(k2[0]))
-print("Antamiesi koordinaattien välinen etäisyys on noin " + str(d) + "km.")
+print(f"Antamiesi koordinaattien välinen etäisyys on noin {d:.2f}km.")
