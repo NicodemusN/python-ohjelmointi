@@ -1,4 +1,6 @@
-C++ tiedoston kasaus Linuxilla tässä repossa:
+Nämä ohjeet pätevät Unix-järjestelmiin! (Mac ja Linux)
+
+C++ tiedoston kasaus käyttäen g++:
     g++ helloworld.cpp -o ~/python-ohjelmointi/cplusplus/build/helloworld.out
 
 Kasatun binäärin käynnistäminen:
