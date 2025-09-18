@@ -2,10 +2,10 @@
 
 list = []
 
-for _ in range(5):
-    print("Anna numero")
+for i in range(5):
+    print(f"Anna numero  + {i + 1}:")
     n = int(input())
     list.append(n)
 
-list.sort(reverse = True)
+list.sort #(reverse = True)
 print(list)
