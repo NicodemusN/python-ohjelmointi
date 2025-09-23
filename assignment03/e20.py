@@ -7,9 +7,6 @@ students = {
     "Bob": {"age": 22, "major": "Math"}
 }
 
-dct = dict()
-dct2 = dict()
-
 # "main loop"
 run = 0
 while run < 2:
@@ -18,14 +15,16 @@ while run < 2:
     run = int(input())
     
     if run == 1:
-        name = input("Anna nimi: ")
+        dct = dict()                        # tehdään uusi dictionary
+
+        name = input("Anna nimi: ")         # tallennetaan käyttäjän syötteet muuttujiin
         age = int(input("Anna ikä: "))
         major = input("Anna ala: ")
 
-        dct["age"] = age
+        dct["age"] = age                    # tallennetaan muuttujat uuden dictionaryn jäseniksi
         dct["major"] = major
+        students[name] = dct                # tallennetaan students dictionaryyn luotu uusi dictionary
 
-    students[name] = dct
-
-print(dct)
+#debug
+#print(dct)
 print(students)
