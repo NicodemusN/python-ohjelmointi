@@ -7,7 +7,8 @@ students = {
     "Bob": {"age": 22, "major": "Math"}
 }
 
-lst = list()
+dct = dict()
+dct2 = dict()
 
 # "main loop"
 run = 0
@@ -18,11 +19,13 @@ while run < 2:
     
     if run == 1:
         name = input("Anna nimi: ")
-        age = input("Anna ikä: ")
+        age = int(input("Anna ikä: "))
         major = input("Anna ala: ")
 
-        lst.insert(0, name)
-        lst.insert(1, age)
-        lst.insert(2, major)
+        dct["age"] = age
+        dct["major"] = major
 
-print(lst)
+    students[name] = dct
+
+print(dct)
+print(students)
