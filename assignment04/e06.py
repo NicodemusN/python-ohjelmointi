@@ -8,12 +8,13 @@ def average(numbers):
 
 # alustetaan lista
 lst = list()
+
 # kysytään käyttäjän syöte ja lisätään listaan
 for i in range(5):
     a = int(input("Anna luku " + str(i+1) + ": "))
     lst.append(a)
 
-# tulostetaan keskiarvo kutsumalla funktio
+# tulostetaan keskiarvo kutsumalla funkt
 print(average(lst))
 
 #debug
