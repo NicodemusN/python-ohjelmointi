@@ -11,4 +11,4 @@ for rivi in range(korkeus):
         print("X", end="")
         tulosta(" ", korkeus - 2)
         print("X", end="")
-    print()§
+    print()
