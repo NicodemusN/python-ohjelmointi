@@ -1,10 +1,11 @@
-# Print Function
+# Toimii
 
 def merkit(c, n):
-    for i in range(len(n)):
+    for i in range(n):
         print(c, end="")
+    print()
 
 a1 = input("Anna merkki: ")
-a2 = input("Anna lukumäärä: ")
+a2 = int(input("Anna lukumäärä: "))
 
 merkit(a1, a2)

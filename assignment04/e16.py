@@ -1,3 +1,5 @@
+# Toimii
+
 def tulosta(merkki, maara):
     for _ in range(maara):
         print(merkki, end="")

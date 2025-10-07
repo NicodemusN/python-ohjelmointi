@@ -1,3 +1,5 @@
+# KESKEN
+
 #def count_vowels(text):
 vowels = "aeiouyAEIOUY"
 
@@ -8,7 +10,7 @@ i = 0
 for i in str:
     lst.append(i)
 
-def vokaalit(x):
+#def vokaalit(x):
 
 
 #debug
