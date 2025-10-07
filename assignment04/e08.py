@@ -1,10 +1,16 @@
 #def count_vowels(text):
+vowels = "aeiouyAEIOUY"
 
 str = input("Anna merkkijono: ")
 lst = list()
 
-for i in range(len(str)):
-    lst[i] = str[i]
+i = 0
+for i in str:
+    lst.append(i)
+
+def vokaalit(x):
+
 
 #debug
-print(lst)
+print("Vokaalien määrä: ")
+    
