@@ -1,4 +1,5 @@
 # Toimii
+# Voisi tehdä ehkä tiiviimmin? Tämä nyt tällainen "rautalankamalli"
 
 def add(a, b):
     sum = a + b
