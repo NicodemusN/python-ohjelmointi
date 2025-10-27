@@ -1,0 +1,278 @@
+# ---------------------
+# Assignment 01
+# ----------------------
+
+# 05
+
+print("anna nimi")
+nimi =  input()
+print ("terve " + nimi)
+
+# 06
+
+print("anna luku 1")
+luku1 = int(input())
+print("anna luku 2")
+luku2 = int(input())
+print("anna luku 3")
+luku3 = int(input())
+
+print("keskiarvo on")
+print((luku1 + luku2 + luku3) / 3)
+
+# 07
+
+print("Anna luku 1")
+luku1 = int(input())
+print("Anna luku 2")
+luku2 = int(input())
+
+if luku2 !=0:
+    jako = luku1 / luku2
+    print(jako)
+
+# 08
+
+print("Anna luku 1")
+luku1 = int(input())
+print("Anna luku 2")
+luku2 = int(input())
+
+if luku2 != 0:
+    jako = luku1 / luku2
+    print (jako)
+else:
+    print("nollalla ei saa jakaa")
+
+# 09
+
+print("Anna arvosanasi")
+arvosana = int(input())
+if arvosana == 0:
+    print("Tavoitteet ovat saavuttamatta.")
+elif arvosana == 1:
+    print("Olet saavuttanut tavoitteet osittain.")
+elif arvosana == 2:
+    print("olet saavuttanut tavoitteet hyvin")
+elif arvosana == 3:
+    print("olet saavuttanut tavoitteet kiitettävästi")
+
+# 10
+
+print("Anna arvosanasi")
+arvosana = int(input())
+if arvosana == 0:
+    print("Tavoitteet ovat saavuttamatta.")
+elif arvosana == 1:
+    print("Olet saavuttanut tavoitteet osittain.")
+elif arvosana == 2:
+    print("olet saavuttanut tavoitteet hyvin")
+elif arvosana == 3:
+    print("olet saavuttanut tavoitteet kiitettävästi")
+else:
+    print("annoit väärän arvosanan")
+
+# 11
+
+print ("luku1")
+luku1 = int( input())
+print("luku2")
+luku2 = int( input())
+print("minkä laskutoimituksen haluat tehdä? +, -, /, *,")
+operaattori = input()
+
+if operaattori == "+" :
+    print(luku1 + luku2)
+elif operaattori == "-":
+    print(luku1 - luku2)
+elif operaattori == "/":
+    if luku2 != 0:
+        print (luku1/luku2)
+    else:
+        print("nollalla ei saa jakaa")
+elif operaattori == "*":
+    print (luku1*luku2)
+else:
+    print("anna +, -, /, * syötteeksi")
+
+# 12
+
+print("luku1")
+luku1 = int(input())
+print("luku2")
+luku2 = int( input())
+summa = luku1 + luku2
+if summa > 10:
+    print("yli10")
+elif summa > 10:
+    print("alle 10")
+elif summa == 10:
+    print("tasan 10")
+
+# 13
+
+print("anna luku")
+luku = int(input())
+if luku >= 0:
+    print(luku)
+elif luku < 0:
+    print(-luku)
+
+# 14
+
+print("Anna kuukausi 1-12")
+luku1 = int(input())
+print("anna päivämäärä 1-31")
+luku2 = int(input())
+
+
+if (luku1 == 12 and luku2 == 24):
+    print("hyvää joulua!")
+else:
+    print("ei ole vielä joulu")
+
+# 15
+
+print("anna kuukausi 1-12")
+luku1 = int(input())
+print("anna päivämäärä 1-31")
+luku2 = int(input())
+if (luku1 == 5 and luku2 == 1) or (luku1 == 12 and luku2 == 6):
+    print("hyvää Vappua tai hyvää itsenäisyyspäivää")
+else:
+    print("nyt ei ole vappu tai itsenäisyyspäivä")
+
+# 16
+
+i = 0
+while i < 3:
+    print(i)
+    i = i + 1
+
+i = 0
+while i <= 10:
+    print(i)
+    i = i + 1
+
+i = 10
+while i >= 1:
+    print(i)
+    i = i - 1
+
+print("anna luku")
+n = int(input())
+
+while i <= n:
+    print(i)
+    i = i + 1
+
+# 17
+
+import random
+
+salainen_luku = random.randint(1, 10)
+kayttajan_syote = -1
+yritys = 0
+while kayttajan_syote != salainen_luku:
+    print("Arvaa salainen luku (1 - 10)")
+    kayttajan_syote = int( input() )
+    yritys = yritys + 1
+
+print("oikein!")
+print("arvasit", yritys, "kertaa.")
+
+# 18
+
+print("anna luku")
+luku = int(input())
+i = 0
+while i < luku:
+    print("terve maailma")
+    i = i + 1
+
+# 19
+
+print("anna luku")
+luku = int(input())
+i = 0
+while i <= luku:
+    print(i)
+    i = i + 2
+
+# 20
+
+print("Anna positiivinen kokonaisluku (negatiivinen lopettaa):")
+luku = int(input())
+
+if luku < 0:
+    print("Et antanut yhtään positiivista lukua.")
+else:
+    pienin = luku
+
+    print("Anna positiivinen kokonaisluku (negatiivinen lopettaa):")
+    luku = int(input())
+
+    while luku >= 0:
+        if luku < pienin:
+            pienin = luku
+
+        print("Anna positiivinen kokonaisluku (negatiivinen lopettaa):")
+        luku = int(input())
+
+    print("Pienin luku oli:", pienin)
+
+# 21
+
+print("Anna suorakaiteen korkeus")
+korkeus = int( input() )
+print("anna suorakaiteen leveys")
+leveys = int(input())
+
+rivi = 0
+while rivi < korkeus:
+    sarake = 0
+    while sarake < leveys:
+        print("X", end='')
+        sarake = sarake + 1
+        print()
+    rivi = rivi + 1
+
+# 22
+
+print("anna luku")
+luku = int(input())
+if luku > 0:
+    while luku >= 0:
+        print(luku)
+        luku = luku - 1
+else:
+    while luku <= 0:
+        print (luku)
+        luku = luku + 1
+
+# 23
+
+print("anna korkeus")
+korkeus = int(input())
+i = 0
+while i < korkeus:
+    j = 0
+    while j < i:
+        print(" ", end="")
+        j = j + 1
+    print("x")
+    i = i + 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+

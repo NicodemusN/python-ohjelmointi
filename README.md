@@ -7,6 +7,8 @@ Hakemistosta "cplusplus" saattaa löytyä myös koulun python-tehtäviä c++ ohj
 
 En ota vastuuta koodeista!  
 
+Kansion /python sisältö on Jussi Pohjolaisen luomaa sisältöä, joka on kopioitu tänne Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) -lisenssin nojalla.  
+
 Pyyttoni:  
 ![pyyttoni](/assets/fixed-python-loop.gif)
 

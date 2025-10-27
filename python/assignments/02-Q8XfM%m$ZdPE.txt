@@ -1,0 +1,249 @@
+import random
+
+# -----------------------------
+# Assignment 01: Christmas Greeting
+# -----------------------------
+day = int(input("Enter day:\n"))
+month = int(input("Enter month:\n"))
+if day == 24 and month == 12:
+    print("Merry Christmas!")
+
+# -----------------------------
+# Assignment 02: Special Age for a Dog
+# -----------------------------
+age = int(input("Enter dog's age:\n"))
+if age < 3 or age > 10:
+    print("The dog is at a special age.")
+
+# -----------------------------
+# Assignment 03: Working Hours
+# -----------------------------
+hour = int(input("Enter hour (0-23):\n"))
+if hour >= 9 and hour <= 17:
+    print("Working hours in progress!")
+
+# -----------------------------
+# Assignment 04: While Loops - Counting
+#  - 1 → 10
+#  - 5 → 15
+#  - 10 → 0
+#  - every second number from 10 → 0
+# -----------------------------
+# 1 → 10
+n = 1
+while n <= 10:
+    print(n)
+    n += 1
+
+# 5 → 15
+n = 5
+while n <= 15:
+    print(n)
+    n += 1
+
+# 10 → 0
+n = 10
+while n >= 0:
+    print(n)
+    n -= 1
+
+# every second number from 10 → 0 (10, 8, 6, ..., 0)
+n = 10
+while n >= 0:
+    print(n)
+    n -= 2
+
+# 1 → 10
+for x in range(1, 11):
+    print(x)
+
+# 5 → 15
+for x in range(5, 16):
+    print(x)
+
+# 10 → 0
+# range(start, stop, step)
+for x in range(10, -1, -1):
+    print(x)
+
+# 10 -> 0
+for i in range(0, 11):
+    print(10 - i)   # 10, 9, 8, ... 0
+
+
+
+
+
+# every second number from 10 → 0
+for x in range(10, -1, -2):
+    print(x)
+
+for x in range(0, 6):
+    print(10 - 2 * x)   # 10, 8, 6, 4, 2, 0
+
+# -----------------------------
+# Assignment 06: Multiplication Using Sum (no '*')
+# -----------------------------
+a = int(input("Enter first number:\n"))
+b = int(input("Enter second number:\n"))
+
+result = 0
+count = 0
+
+while count < b:
+    result = result + a
+    count = count + 1
+
+print("Result:")
+print(result)
+
+# -----------------------------
+# Assignment 07: Weekday with match-case + validation loop
+# -----------------------------
+n = 0
+while n < 1 or n > 7:
+    n = int(input("Give number (1-7):\n"))
+
+match n:
+    case 1:
+        print("monday")
+    case 2:
+        print("tuesday")
+    case 3:
+        print("wednesday")
+    case 4:
+        print("thursday")
+    case 5:
+        print("friday")
+    case 6:
+        print("saturday")
+    case 7:
+        print("sunday")
+
+# -----------------------------
+# Assignment 08: Grade from score (0-60), no match-case
+# -----------------------------
+s = -1
+while s < 0 or s > 60:
+    s = int(input("Give score (0-60):\n"))
+
+if s >= 0 and s <= 8:
+    print("improbatur")
+elif s >= 9 and s <= 16:
+    print("approbatur")
+elif s >= 17 and s <= 24:
+    print("lubenter")
+elif s >= 25 and s <= 35:
+    print("cum laude")
+elif s >= 36 and s <= 44:
+    print("magna")
+elif s >= 45 and s <= 52:
+    print("eximia")
+elif s >= 53 and s <= 60:
+    print("laudatur")
+
+
+# assignment 09
+
+while True:
+    n = int(input("give number: "))
+    if n >= 1 and n <= 7:
+        print(f"you gave number {n}")
+        break
+
+# -----------------------------
+# Assignment 10: One Line of Xs (use loop to build)
+# -----------------------------
+width = int(input("Enter width:\n"))
+line = ""
+i = 0
+while i < width:
+    line += "X"
+    i += 1
+print(line)
+
+# -----------------------------
+# Assignment 11: Square (height x height, loop build)
+# -----------------------------
+h = int(input("Enter height:\n"))
+
+# build one line with a while loop (no "X" * h)
+row = 0
+while row < h:
+´   col = 0
+    while col < h:
+        print("X", end="")
+        col = col + 1
+    row = row + 1
+
+
+# or
+
+h = int(input("Enter height:\n"))
+
+# build one line with a while loop (no "X" * h)
+line = ""
+i = 0
+while i < h:
+    line = line + "X"
+    i = i + 1
+
+# print that line h times
+row = 0
+while row < h:
+    print(line)
+    row = row + 1
+
+# -----------------------------
+# Extra 12: Go to the Pub
+#  - Time between 12:00 and 03:29 next day
+#  - Money >= 5€
+# -----------------------------
+hour = int(input("Hour (0-23):\n"))
+minute = int(input("Minute (0-59):\n"))
+money = float(input("Money in euros:\n"))
+
+isMoneyOk = money >= 5  # True vai False
+
+# time between 00:00 and 03:29
+isNight = ((hour >= 0 and hour <= 2) or (hour == 3 and minute <= 29))
+
+# time between 12:00 and 23:59
+isDay = (hour >= 12 and hour <= 23)
+
+isTimeOk = (isNight or isDay)
+
+if isMoneyOk and isTimeOk:
+    print("Ale pup is open from 12 to 03:29. Beer costs 5€. Go to the pub.")
+
+# -----------------------------
+# Extra 13: Rock-Paper-Scissors, best of 3 (first to 2)
+
+import random
+
+valid = {"rock", "paper", "scissors"}
+p_wins = 0
+c_wins = 0
+
+while p_wins < 2 and c_wins < 2:
+    user = input("rock, paper or scissors?\n")
+
+    comp = random.choice(["rock", "paper", "scissors"])
+    print("computer:", comp)
+
+    if user == comp:
+        print(f"Draw ({p_wins}-{c_wins})")
+    else:
+        if (user == "rock" and comp == "scissors") or \
+           (user == "paper" and comp == "rock") or \
+           (user == "scissors" and comp == "paper"):
+            p_wins = p_wins + 1
+            print(f"You win this round ({p_wins}-{c_wins})")
+        else:
+            c_wins = c_wins + 1
+            print(f"Computer wins this round ({p_wins}-{c_wins})")
+
+if p_wins == 2:
+    print("You win the game!")
+else:
+    print("Computer wins the game!")
